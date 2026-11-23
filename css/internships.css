@@ -1,0 +1,500 @@
+/* =========================================
+   INTERNSHIP HERO
+========================================= */
+
+.internships-hero {
+    padding: 100px 6%;
+
+    text-align: center;
+
+    background: #f8fafc;
+}
+
+.internships-hero h1 {
+    font-size: clamp(35px, 5vw, 60px);
+}
+
+
+/* =========================================
+   INTERNSHIP GRID
+========================================= */
+
+.internships-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================
+   INTERNSHIP CARD
+========================================= */
+
+.internship-card {
+    padding: 35px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    background: white;
+
+    transition: 0.3s;
+}
+
+.internship-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow);
+}
+
+.internship-card h3 {
+    margin-bottom: 15px;
+}
+
+.internship-card p {
+    color: var(--gray);
+}
+
+
+/* =========================================
+   INTERNSHIP DETAILS
+========================================= */
+
+.internship-meta {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin: 20px 0;
+}
+
+.internship-meta span {
+    padding: 8px 15px;
+
+    background: #f1f5f9;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   APPLICATION FORM
+========================================= */
+
+.application-form {
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 0 3px rgba(230, 0, 35, 0.1);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .internships-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .internships-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .application-form {
+        padding: 25px;
+    }
+
+}
+
+.feature-list {
+    display: grid;
+    gap: 8px;
+    margin: 2px 0 22px;
+    padding-left: 20px;
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.card .btn-primary {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+/* =========================================
+   SQL SEMINAR JOURNEY
+========================================= */
+
+.sql-journey {
+    background:
+        linear-gradient(
+            180deg,
+            #f8fafc,
+            #ffffff
+        );
+}
+
+
+/* DAY CONTAINER */
+
+.sql-day {
+    max-width: 1200px;
+    margin: 0 auto 70px;
+
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid rgba(148, 163, 184, 0.2);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 15px 40px rgba(15, 23, 42, 0.05);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.sql-day:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 25px 60px rgba(15, 23, 42, 0.10);
+}
+
+
+/* DAY HEADER */
+
+.sql-day-header {
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+
+    margin-bottom: 30px;
+}
+
+
+.day-number {
+    min-width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e60023,
+            #ff5b45
+        );
+
+    color: white;
+
+    font-size: 22px;
+    font-weight: 800;
+
+    box-shadow:
+        0 10px 25px rgba(230, 0, 35, 0.2);
+}
+
+
+.sql-day-header h3 {
+    font-size: clamp(20px, 3vw, 28px);
+
+    margin-bottom: 10px;
+
+    color: #0f172a;
+}
+
+
+.sql-day-header p {
+    color: #64748b;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* IMAGE GRID */
+
+.sql-gallery {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+/* IMAGE CARD */
+
+.sql-gallery-item {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    aspect-ratio: 16 / 10;
+
+    background: #f1f5f9;
+
+    isolation: isolate;
+}
+
+
+/* IMAGE */
+
+.sql-gallery-item img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
+        filter 0.5s ease;
+}
+
+
+/* HOVER ZOOM */
+
+.sql-gallery-item:hover img {
+    transform: scale(1.08);
+
+    filter: brightness(0.85);
+}
+
+
+/* IMAGE OVERLAY */
+
+.sql-gallery-item::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 50%,
+            rgba(15, 23, 42, 0.65)
+        );
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+
+    pointer-events: none;
+}
+
+
+.sql-gallery-item:hover::after {
+    opacity: 1;
+}
+
+
+/* IMAGE LABEL */
+
+.image-label {
+    position: absolute;
+
+    left: 20px;
+    bottom: 20px;
+
+    z-index: 2;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    opacity: 0;
+
+    transform: translateY(15px);
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease;
+}
+
+
+.sql-gallery-item:hover .image-label {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .sql-day {
+        padding: 20px;
+
+        margin-bottom: 40px;
+
+        border-radius: 20px;
+    }
+
+    .sql-day-header {
+        align-items: flex-start;
+
+        gap: 15px;
+
+        margin-bottom: 20px;
+    }
+
+    .day-number {
+        min-width: 55px;
+        height: 55px;
+
+        border-radius: 15px;
+
+        font-size: 16px;
+    }
+
+    .sql-day-header h3 {
+        font-size: 21px;
+    }
+
+    .sql-day-header p {
+        font-size: 14px;
+    }
+
+    .sql-gallery {
+        gap: 15px;
+    }
+
+    .sql-gallery-item {
+        border-radius: 14px;
+
+        aspect-ratio: 4 / 3;
+    }
+
+    .image-label {
+        left: 12px;
+        bottom: 12px;
+
+        font-size: 12px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .sql-day {
+        padding: 16px;
+    }
+
+    .sql-day-header {
+        flex-direction: column;
+    }
+
+    .day-number {
+        min-width: 50px;
+        height: 50px;
+    }
+
+    /* Images remain side-by-side on mobile */
+    .sql-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    .sql-gallery-item {
+        aspect-ratio: 3 / 4;
+    }
+
+    .sql-gallery-item img {
+        object-position: center;
+    }
+
+    /* Show labels on mobile without hover */
+    .image-label {
+        opacity: 1;
+
+        transform: translateY(0);
+
+        font-size: 10px;
+
+        left: 8px;
+        bottom: 8px;
+    }
+
+    .sql-gallery-item::after {
+        opacity: 1;
+    }
+
+}

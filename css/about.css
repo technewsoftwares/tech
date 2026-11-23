@@ -1,0 +1,505 @@
+/* ==========================================
+   ABOUT PAGE
+========================================== */
+
+/* ABOUT HERO */
+.about-hero {
+    padding: 100px 6%;
+    background: #f8fafc;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* GENERAL SECTIONS */
+.about-section {
+    padding: 80px 6%;
+}
+
+
+/* ==========================================
+   COMPANY IMAGE
+========================================== */
+
+.company-image {
+    width: 100%;
+}
+
+.company-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+}
+
+
+/* ==========================================
+   HIGHLIGHT BOX
+========================================== */
+
+.highlight-box {
+    padding: 40px;
+    border: 1px solid rgba(230, 0, 35, 0.12);
+    border-radius: 22px;
+    background: linear-gradient(145deg, #fff5f6, #ffffff);
+}
+
+.highlight-box h3 {
+    margin: 12px 0;
+    font-size: 28px;
+}
+
+
+/* ==========================================
+   COMPANY JOURNEY
+========================================== */
+
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+.timeline-date {
+    padding-top: 20px;
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.timeline-content {
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.timeline-content h3 {
+    margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   COMPANY GALLERY
+========================================== */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.gallery-item {
+    position: relative;
+    min-height: 280px;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #e2e8f0;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 25px;
+
+    background: linear-gradient(
+        to top,
+        rgba(15, 23, 42, 0.85),
+        transparent 65%
+    );
+}
+
+.gallery-overlay h3 {
+    color: #fff;
+    font-size: 22px;
+}
+
+
+/* ==========================================
+   COMPANY HIGHLIGHTS
+========================================== */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.stat-card {
+    padding: 35px 20px;
+
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    background: #fff;
+    text-align: center;
+
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.09);
+}
+
+.stat-card h2 {
+    color: var(--primary);
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    color: #64748b;
+    font-size: 16px;
+}
+
+
+/* ==========================================
+   TEAM SECTION
+========================================== */
+
+.team-container {
+    max-width: 1000px;
+    margin: 60px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* TEAM CARD */
+
+.team-card {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    width: 90%;
+    padding: 35px;
+
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.09);
+}
+
+
+/* LEFT AND RIGHT ALIGNMENT */
+
+.team-card.left {
+    margin-right: auto;
+}
+
+.team-card.right {
+    flex-direction: row-reverse;
+    margin-left: auto;
+    text-align: right;
+}
+
+
+/* PROFILE IMAGE */
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+
+    min-width: 150px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+
+    border: 5px solid #f1f5f9;
+}
+
+
+/* TEAM INFORMATION */
+
+.team-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.team-info h3 {
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+
+.team-role {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.team-info > p:not(.team-role) {
+    margin-top: 12px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+
+/* TEAM LINKS */
+
+.team-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.team-card.right .team-links {
+    justify-content: flex-end;
+}
+
+.team-social {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 8px 14px;
+
+    border-radius: 30px;
+
+    background: #f1f5f9;
+    color: var(--primary);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.team-social:hover {
+    background: var(--primary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   RESPONSIVE - TABLET
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .team-card {
+        width: 95%;
+        padding: 28px;
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE - MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        padding: 60px 5%;
+    }
+
+    .about-section {
+        padding: 50px 5%;
+    }
+
+
+    /* COMPANY IMAGE */
+
+    .company-image img {
+        width: 100%;
+        min-height: 280px;
+        border-radius: 22px;
+        object-fit: cover;
+    }
+
+
+    /* HIGHLIGHT BOX */
+
+    .highlight-box {
+        padding: 28px;
+    }
+
+    .highlight-box h3 {
+        font-size: 24px;
+    }
+
+
+    /* TIMELINE */
+
+    .timeline {
+        gap: 0;
+    }
+
+    .timeline-item {
+        grid-template-columns: 60px minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .timeline-date {
+        font-size: 14px;
+        padding-top: 18px;
+    }
+
+    .timeline-content {
+        margin-bottom: 20px;
+        padding: 18px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .gallery-item {
+        min-height: 280px;
+        border-radius: 25px;
+    }
+
+    .gallery-item img {
+        min-height: 280px;
+    }
+
+    .gallery-overlay {
+        padding: 25px;
+    }
+
+
+    /* STATISTICS */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .stat-card {
+        padding: 25px 15px;
+    }
+
+    .stat-card h2 {
+        font-size: 30px;
+    }
+
+
+    /* TEAM */
+
+    .team-container {
+        margin: 40px auto;
+        gap: 25px;
+    }
+
+    .team-card,
+    .team-card.right,
+    .team-card.left {
+        width: 100%;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        margin: 0;
+
+        padding: 25px;
+    }
+
+    .team-card img {
+        width: 130px;
+        height: 130px;
+        min-width: 130px;
+    }
+
+    .team-info h3 {
+        font-size: 22px;
+    }
+
+    .team-links,
+    .team-card.right .team-links {
+        justify-content: center;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 400px) {
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-card {
+        padding: 20px;
+    }
+
+    .team-social {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+
+}

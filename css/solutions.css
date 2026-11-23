@@ -1,0 +1,132 @@
+/* =========================================
+   SOLUTIONS HERO
+========================================= */
+
+.solutions-hero {
+    padding: 100px 6%;
+
+    text-align: center;
+
+    background: #f8fafc;
+}
+
+.solutions-hero h1 {
+    font-size: clamp(35px, 5vw, 60px);
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   SOLUTIONS GRID
+========================================= */
+
+.solutions-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.solution-card {
+    padding: 40px;
+
+    border-radius: 20px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    transition: 0.3s;
+}
+
+.solution-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow);
+}
+
+.solution-card h3 {
+    margin: 20px 0;
+}
+
+.solution-card p {
+    color: var(--gray);
+}
+
+
+/* =========================================
+   SOLUTION DETAILS
+========================================= */
+
+.solution-detail {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+.solution-detail img {
+    border-radius: 25px;
+}
+
+.solution-detail h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.solution-features {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.feature-card {
+    padding: 25px;
+
+    background: var(--light-gray);
+
+    border-radius: 15px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .solutions-grid,
+    .solution-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .solution-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .solution-features {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.solutions-hero,
+.projects-hero,
+.webinars-hero,
+.internships-hero,
+.contact-hero {
+    padding: clamp(68px, 8vw, 104px) 24px;
+}
